@@ -34,9 +34,9 @@ def events():
 def healthCheck():
     return {"status": "Alive"}
 
-# @app.route('/')
-# def render_page():
-#     return render_template('index.html')
+@app.route('/')
+def render_page():
+    return render_template('index.html')
 
 @app.route('/web/')
 def render_page_web():

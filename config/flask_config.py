@@ -5,7 +5,7 @@ configPath = os.path.abspath("config.env")
 config = dotenv_values(configPath)
 
 class AppConfig:
-    host="localhost" #needs to be localhost for flutter 10.0.2.2 endpoint to work
+    host="localhost" #Only localhost for testing
     port=8080
     mongodbUri=config["MONGO_URL"]
     databaseName=config["DBNAME"]
